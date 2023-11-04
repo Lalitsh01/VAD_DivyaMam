@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Management</title>
+    <Style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+
+        .container {
+            position: relative;
+            background-image: url('img.jpeg');
+            background-size:cover;
+        }
+
+        .watermark {
+            
+            bottom: 10px;
+            right: 10px;
+            opacity: 0.7;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="watermark">
+            <img src="img.jpg" alt="Watermark">
+        </div>
+
+        <h2>KIET Student Registration Form</h2>
+
+        <form action="/submit_student_registration" method="post">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="First_Name"><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Last_Name"><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email!"><br>
+
+            <label for="contact">Contact Number:</label><br>
+            <input type="text" id="contact" name="contact" placeholder="Enter Your Contact Number"><br>
+
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" placeholder="Enter Your Address"><br>
+
+            <label for="Class">CLASS</label><br>
+            <select id="Class" name="Class">
+                <option value="MCA">MCA</option>
+                <option value="B.tech(CSE)">B.tech(CSE)</option>
+                <option value="B.tech(CSE)">B.tech(Electrical)</option>
+                <option value="B.tech(CSE)">B.tech(Mechanical)</option>
+                <option value="B.Pharma">B.Pharma</option>
+                <option value="M.tech(CSE)">M.tech(CSE)</option>
+                <option value="MBA">MBA</option>
+            </select><br>
+
+            <label for="bloodGroup">Blood Group:</label><br>
+            <select id="bloodGroup" name="bloodGroup">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select><br><br>
+        
+        <input type="button" value="Submit">
+    </div>
+</body>
+
+</html>
